@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = require("./index");
+var Listener_1 = require("./Listener");
+var Subscriber_1 = require("./Subscriber");
 var Emitter = (function () {
     function Emitter() {
         this.listeners = {};
@@ -17,7 +18,7 @@ var Emitter = (function () {
         if (!this.listeners[event]) {
             this.listeners[event] = [];
         }
-        var listener = new index_1.Listener(new index_1.Subscriber(this, event), callback);
+        var listener = new Listener_1.Listener(new Subscriber_1.Subscriber(this, event), callback);
         this.listeners[event].push(listener);
         return listener.getSubscriber();
     };

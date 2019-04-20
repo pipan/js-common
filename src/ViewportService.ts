@@ -1,5 +1,6 @@
 import { injectable, inject } from "inversify";
-import { Emitter, EmitterService } from "./index";
+import { Emitter } from "./Emitter";
+import { EmitterService } from './EmitterService';
 
 @injectable()
 export class ViewportService

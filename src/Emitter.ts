@@ -1,4 +1,5 @@
-import { Listener, Subscriber } from "./index";
+import { Listener } from "./Listener";
+import { Subscriber } from './Subscriber';
 
 export class Emitter
 {

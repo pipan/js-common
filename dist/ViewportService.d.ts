@@ -1,4 +1,5 @@
-import { Emitter, EmitterService } from "./index";
+import { Emitter } from "./Emitter";
+import { EmitterService } from './EmitterService';
 export declare class ViewportService {
     protected emitter: Emitter;
     protected width: number;

@@ -13,7 +13,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var inversify_1 = require("inversify");
-var index_1 = require("./index");
+var EmitterService_1 = require("./EmitterService");
 var ViewportService = (function () {
     function ViewportService(emitterService) {
         var _this = this;
@@ -47,8 +47,8 @@ var ViewportService = (function () {
     };
     ViewportService = __decorate([
         inversify_1.injectable(),
-        __param(0, inversify_1.inject(index_1.EmitterService)),
-        __metadata("design:paramtypes", [index_1.EmitterService])
+        __param(0, inversify_1.inject(EmitterService_1.EmitterService)),
+        __metadata("design:paramtypes", [EmitterService_1.EmitterService])
     ], ViewportService);
     return ViewportService;
 }());

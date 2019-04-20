@@ -1,5 +1,6 @@
 import { injectable } from "inversify";
-import { Emitter, Subscriber } from "./index";
+import { Emitter } from "./Emitter";
+import { Subscriber } from './Subscriber';
 
 @injectable()
 export class EmitterService

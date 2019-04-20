@@ -1,4 +1,4 @@
-import { Subscriber } from "./index";
+import { Subscriber } from "./Subscriber";
 export declare class Listener {
     protected subscriber: Subscriber;
     protected callback: any;

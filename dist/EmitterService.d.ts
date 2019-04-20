@@ -1,4 +1,5 @@
-import { Emitter, Subscriber } from "./index";
+import { Emitter } from "./Emitter";
+import { Subscriber } from './Subscriber';
 export declare class EmitterService {
     protected globalEmitter: Emitter;
     constructor();

@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var inversify_1 = require("inversify");
-var index_1 = require("./index");
+var Emitter_1 = require("./Emitter");
 var EmitterService = (function () {
     function EmitterService() {
         this.globalEmitter = this.createEmitter();
     }
     EmitterService.prototype.createEmitter = function () {
-        return new index_1.Emitter();
+        return new Emitter_1.Emitter();
     };
     EmitterService.prototype.emit = function (event, data) {
         if (data === void 0) { data = {}; }
