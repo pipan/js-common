@@ -10,18 +10,18 @@ export class DomService
         this.domParser = new DOMParser();
     }
 
-    public insert(element: any, into: any): void 
+    public insert(elements: Array<HTMLElement>, into: HTMLElement): void 
     {
-        if (element.length > 0) {
-            for (let i = 0; i < element.length; i++) {
-                into.appendChild(element[i]);
+        // if (element.length > 0) {?
+            for (let i = 0; i < elements.length; i++) {
+                into.appendChild(elements[i]);
             }
-        } else {
-            into.appendChild(element);
-        }        
+        // } else {
+            // into.appendChild(element);
+        // }        
     }
 
-    public create(element: string): any
+    public create(element: string): HTMLElement
     {
         let parsed: any = this.domParser.parseFromString(element, 'text/html');
         return parsed.body.firstElementChild;

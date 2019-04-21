@@ -1,4 +1,4 @@
-import { Emitter } from "./index";
+import { Emitter } from "./Emitter";
 
 export class Subscriber
 {
