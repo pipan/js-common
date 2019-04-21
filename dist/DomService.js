@@ -14,14 +14,9 @@ var DomService = (function () {
     function DomService() {
         this.domParser = new DOMParser();
     }
-    DomService.prototype.insert = function (element, into) {
-        if (element.length > 0) {
-            for (var i = 0; i < element.length; i++) {
-                into.appendChild(element[i]);
-            }
-        }
-        else {
-            into.appendChild(element);
+    DomService.prototype.insert = function (elements, into) {
+        for (var i = 0; i < elements.length; i++) {
+            into.appendChild(elements[i]);
         }
     };
     DomService.prototype.create = function (element) {

@@ -1,6 +1,6 @@
 export declare class DomService {
     protected domParser: any;
     constructor();
-    insert(element: any, into: any): void;
-    create(element: string): any;
+    insert(elements: Array<HTMLElement>, into: HTMLElement): void;
+    create(element: string): HTMLElement;
 }

@@ -1,4 +1,4 @@
-import { Emitter } from "./index";
+import { Emitter } from "./Emitter";
 export declare class Subscriber {
     protected emitter: Emitter;
     protected event: string;
