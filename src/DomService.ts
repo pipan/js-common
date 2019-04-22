@@ -12,13 +12,9 @@ export class DomService
 
     public insert(elements: Array<HTMLElement>, into: HTMLElement): void 
     {
-        // if (element.length > 0) {?
-            for (let i = 0; i < elements.length; i++) {
-                into.appendChild(elements[i]);
-            }
-        // } else {
-            // into.appendChild(element);
-        // }        
+        for (let i = 0; i < elements.length; i++) {
+            into.appendChild(elements[i]);
+        }
     }
 
     public create(element: string): HTMLElement
