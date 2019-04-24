@@ -2,7 +2,7 @@
 
 This module provides basic services, that are handy in most applications.
 
-# Installation
+## Installation
 
 ```sh
 npm install --save @wildebeest/common

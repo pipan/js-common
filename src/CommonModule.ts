@@ -14,10 +14,9 @@ export class CommonModule implements Module
 
     register(container: Container): void
     {
-        container.bind(DomService).to(DomService).inSingletonScope();
+        container.bind<DomService>(DomService).toSelf().inSingletonScope();
         container.bind<ViewportService>(ViewportService).toSelf().inSingletonScope();
         container.bind<EmitterService>(EmitterService).toSelf().inSingletonScope();
-        container.bind<Emitter>(Emitter).toSelf();
     }
 
     boot(container: Container): void { }
