@@ -14,7 +14,7 @@
         "emitDecoratorMetadata": true
     },
     "include": [
-        "src/**/*"
+        "src/**/*", "../component/src/ComponentBindService.ts"
     ],
     "exclude": [
         "node_modules"
