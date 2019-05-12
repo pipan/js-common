@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/pipan/js-common.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@wildebeest/js-modules": "^0.1.0"
   },
   "devDependencies": {
