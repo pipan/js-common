@@ -1,5 +1,7 @@
 ## Common Module
 
+[![Build Status](https://travis-ci.com/pipan/js-common.svg?branch=master)](https://travis-ci.com/pipan/js-common)
+
 This module provides basic services, that are handy in most applications.
 
 ## Installation
